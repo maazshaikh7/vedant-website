@@ -11,8 +11,7 @@
 
 html,
 body {
-  height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
@@ -21,12 +20,21 @@ body {
   scroll-behavior: smooth;
 }
 
+/* ====UTILITIES==== */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.active--navlink {
+  border-bottom: 3px solid #ef476e;
+}
+
 /* ====NAVBAR==== */
 
 .navbar {
-  position: sticky;
-  top: 0;
-  max-height: 13vh;
+  max-height: 15vh;
   display: flex;
   align-content: center;
   padding: 5vh 5vw;
@@ -39,6 +47,23 @@ body {
   color: #fff;
 }
 
+.navbar__social-media--container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+.navbar__social-media-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.navbar__social-media-icon:hover {
+  cursor: pointer;
+  filter: invert(42%) sepia(76%) saturate(2373%) hue-rotate(319deg)
+    brightness(94%) contrast(99%);
+}
+
 .navbar__link--container {
   margin-left: auto;
   display: flex;
@@ -48,12 +73,14 @@ body {
 .navbar__link {
   color: #fff;
   text-decoration: none;
+  padding-bottom: 5px;
 }
 
 /* ====HERO SECTION==== */
 
 .hero {
   min-height: 87vh;
+  max-height: 87vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,138 +98,43 @@ body {
 
 .hero__text--container {
   max-width: 50vw;
-  font-size: clamp(2.5rem, 3rem, 4rem);
-  line-height: 4.5rem;
+  font-size: clamp(2rem, 2.5rem, 4rem);
+  line-height: 4rem;
 }
 
-/* ===MEDIA QUERIES=== */
-
-@media (min-width: 945px) and (max-width: 1315px) {
-  .hero__text--container {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-  }
+/* ====ABOUT SECTION==== */
+.about {
+  min-height: 87vh;
+  max-height: 87vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
 }
 
-@media (min-width: 769px) and (max-width: 944px) {
-  .hero__text--container {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
+.about__logo--container {
+  max-width: 50vw;
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
-  /* ====NAVBAR==== */
-
-  .navbar {
-    position: sticky;
-    top: 0;
-    max-height: 13vh;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding: 5vh 5vw;
-    background-color: #445d7b;
-    font-size: 1.25rem;
-  }
-
-  .navbar__name {
-    font-size: 1.5rem;
-    padding-bottom: 5px;
-    border-bottom: 3px solid #a9b3c1;
-  }
-
-  .navbar__link--container {
-    display: none;
-    margin-left: auto;
-    gap: 3rem;
-  }
-
-  .hero {
-    min-height: 87vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 0;
-    padding: 0;
-    flex-shrink: 0;
-  }
-
-  .hero__logo--container {
-    max-width: 80vw;
-  }
-
-  .hero__logo {
-    max-width: 75vw;
-  }
-
-  .hero__text--container {
-    max-width: 80vw;
-    font-size: 2rem;
-    line-height: 3rem;
-    text-align: center;
-  }
-  .hero__text {
-    margin: 0;
-  }
+.about__logo {
+  max-width: 30vw;
 }
 
-@media (max-width: 425px) {
-  /* ====NAVBAR==== */
+.about__text--container {
+  max-width: 60ch;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
 
-  .navbar {
-    position: sticky;
-    top: 0;
-    max-height: 13vh;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding: 5vh 5vw;
-    background-color: #445d7b;
-    font-size: 1.25rem;
-  }
+.about__text--link {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 3px solid #a9b3c1;
+  padding-bottom: 5px;
+}
 
-  .navbar__name {
-    font-size: 1.5rem;
-    padding-bottom: 5px;
-    border-bottom: 3px solid #a9b3c1;
-  }
-
-  .navbar__link--container {
-    display: none;
-    margin-left: auto;
-    gap: 3rem;
-  }
-
-  .hero {
-    min-height: 87vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 0;
-    padding: 0;
-    flex-shrink: 0;
-  }
-
-  .hero__logo--container {
-    max-width: 80vw;
-  }
-
-  .hero__logo {
-    max-width: 80vw;
-  }
-
-  .hero__text--container {
-    max-width: 80vw;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    text-align: center;
-  }
-  .hero__text {
-    margin: 0;
-  }
+.about__text--link:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #ef476e;
 }
