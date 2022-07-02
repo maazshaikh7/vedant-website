@@ -5,30 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />f -->
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/media-queries.css" />
     <title>Matt Wilson</title>
   </head>
   <body id="body">
-    <nav id="navbar" class="navbar">
+    <!-- NAVBAR -->
+
+    <nav id="navbar" class="navbar sticky">
       <div class="navbar__name--container">
         <a href="#body" class="navbar__name"> MATT WILSON </a>
+        <a href="mailto: hello@mattwwilson.com">
+          <div class="navbar__social-media--container">
+            <img
+              class="navbar__social-media-icon"
+              src="./images/email.svg"
+              alt="email logo"
+            />
+        </a>
+          <a href="https://github.com/Mattwwilson34">
+            <img
+              class="navbar__social-media-icon"
+              src="./images/github.svg"
+              alt="github logo"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/mattwwilson">
+            <img
+              class="navbar__social-media-icon"
+              src="./images/linkedin.svg"
+              alt="linkedIn logo"
+            />
+          </a>
+        </div>
       </div>
       <div class="navbar__link--container">
-        <a class="navbar__link" href="#body">HOME</a>
+        <a class="navbar__link active--navlink" href="#body">HOME</a>
         <a class="navbar__link" href="#section--two">ABOUT</a>
         <a class="navbar__link" href="#section--three">PROJECTS</a>
         <a class="navbar__link" href="#section--four">TIMELINE</a>
       </div>
     </nav>
+
+    <!-- SECTION ONE HERO -->
+
     <section id="section--one" class="hero">
       <div class="hero__logo--container">
-        <img class="hero__logo" src="./images/logo.svg" />
+        <img class="hero__logo" src="./images/logo.svg" alt="black cat" />
       </div>
       <div class="hero__text--container">
         <p class="hero__text">
           Hi there, my name is Matt. I am a full-stack developer who loves
-          building dynamic websites.
+          building fast and organized back ends, dynamic front ends, and
+          experimenting with data storage techniques.
         </p>
       </div>
+    </section>
+
+    <!-- SECTION TWO ABOUT -->
+
+    <section id="section--two" class="about">
+      <div class="about__logo--container">
+        <img src="./images/gotenks.svg" class="div about__logo" />
+      </div>
+      <div class="about__text--container">
+        <p class="about__text">
+          I am a full-stack developer who fell in love with software and
+          computer science after discovering Harvard's CS50 course in 2018. In
+          May of 2021, I graduated from Duke Universities Physical Therapy
+          program and began pouring 50+ hours a week into building projects and
+          learning web development from
+          <a
+            class="about__text--link"
+            href="https://www.udemy.com/course/the-web-developer-bootcamp/"
+            >Udemy courses</a
+          >
+          and
+          <a class="about__text--link" href="https://www.theodinproject.com/"
+            >The Odin Project</a
+          >. I currently work full-time as a physical therapist in Durham, NC,
+          and spend most evenings and weekends coding.
+
+          <a
+            class="about__text--link"
+            href="https://www.linkedin.com/in/mattwwilson"
+          >
+            I am actively seeking full-time employment as a javascript developer
+            with exerience in mongoDB, express, react, and node.
+          </a>
+          When I am not working as a PT or coding, I enjoy spending time with my
+          wife Lyra and our cat Gotenks and play for the
+          <a class="about__text--link" href="https://theaudl.com/flyers"
+            >Raleigh Flyers</a
+          >, North Carolina's professional ultimate frisbee team.
+        </p>
+      </div>
+    </section>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
