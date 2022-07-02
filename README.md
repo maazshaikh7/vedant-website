@@ -1,2 +1,0 @@
-# mattwwilson.com
-Personal Website
