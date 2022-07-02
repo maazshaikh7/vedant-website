@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+	<title>icons8-circled-envelope-100</title>
+	<defs>
+		<image  width="92" height="92" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcAQMAAADZIUAbAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAqbPBUEXQfQAAAAJ0Uk5TAP9bkSK1AAABRUlEQVR4nHWUTYoEIQyFFRcuPYJH8WgKfTFhLiLMBRxmI3RVpf1JYqegauVH4UvyTKJU/xyA4g8AKp1th4vAd4CEEAeUddbjDG1f4UtuAoqHBXnfJ4V1XmE1wpQzCMdWRm1UXtqeIO0wK1AkKDvMCvQNmqHtmDOqAMtw3YCzGfkI8BtSh1nIUE09T4bc4SL3BgC5l0cFCWssAwq6N6GiexMaulcUOmZmdQDn0LbvBcfQdv8IsWuHXwTfteMLwXVtMAi2KX0RmEOZg0BfyjYCBcpVhphD2X9K5D8aKvCdkSSruTecHNT/QQNKJ2So4YezDtlj1uesB4ubLtpZtjDkbpUwMWFzFmn87Um+Hks8o3jg5z547p3nfhNt+dy9sskDQb4PhhgZMUxizMQAitGUQxt2mNugixUgloNYG3KhiFUjlhCvpw+p88AYIlMavAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="4" y="4"/>
+</svg>
