@@ -53,6 +53,12 @@ body {
   margin-top: 5px;
 }
 
+.navbar__social-media--container {
+  position: absolute;
+  top: 4vh;
+  left: 3vw;
+}
+
 .navbar__social-media-icon {
   height: 30px;
   width: 30px;
