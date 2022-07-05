@@ -56,15 +56,22 @@ window.addEventListener('scroll', (event) => {
 
       // Section 3 skills
       if (section.id === 'section--three') {
-        skillsBars.forEach((bar) => bar.classList.remove('width-zero'));
+        skillsBars.forEach((bar) => {
+          const skillLevel = bar.dataset.skillLevel;
+          bar.style.width = `${skillLevel}%`;
+          if (skillLevel >= 66) {
+            bar.style.backgroundColor = '#39b54a';
+          } else if (skillLevel > 33 && skillLevel < 66) {
+            bar.style.backgroundColor = '#00b6af';
+          } else {
+            bar.style.backgroundColor = '#ef486e';
+          }
+        });
       }
     } else {
       //
       // Remove active nav link class if section in window
       navLinks[i].classList.remove('active--navlink');
-
-      // Section 3 skills
-      skillsBars.forEach((bar) => bar.classList.add('width-zero'));
     }
   });
 });
