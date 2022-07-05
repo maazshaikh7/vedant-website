@@ -27,8 +27,8 @@ body {
   top: 0;
 }
 
-.width-zero {
-  width: 0% !important;
+.color-red {
+  color: #ef476e;
 }
 
 .active--navlink {
@@ -113,9 +113,9 @@ body {
 }
 
 /* ====ABOUT SECTION==== */
+
 .about {
-  min-height: 87vh;
-  max-height: 87vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -152,23 +152,22 @@ body {
 /* ====SKILLS SECTION==== */
 
 .skills {
-  min-height: 87vh;
-  max-height: 87vh;
+  min-height: 105vh;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row-reverse;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
   padding: 0 2rem;
 }
 
 .skills__text--container {
-  max-width: 50vw;
+  max-width: 47.5vw;
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
 
 .skills__graph--container {
-  min-width: 40vw;
+  min-width: 38vw;
   display: flex;
   flex-direction: column;
 }
@@ -186,7 +185,74 @@ body {
 
 .skill__graph--bar {
   height: 5px;
+  width: 0%;
   background-color: #a9b3c1;
   transition: width 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border-radius: 5px;
+}
+
+/* ==== PROJECTS SECTION==== */
+
+.projects {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  padding: 14vh 2rem;
+}
+
+.projects__title {
+  margin: 0 auto 2rem auto;
+  font-size: 36px;
+}
+
+.projects__container {
+  min-width: 50vw;
+  min-height: 50vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5rem;
+}
+
+.projects__square {
+  width: 40vw;
+  height: 30vh;
+  padding: 1.5rem;
+  background-color: #212121;
+  border: 1px solid #a9b3c1;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project__square--icon {
+  width: 25px;
+}
+
+.project__icon--sql {
+  width: 18px;
+}
+
+.external-link-container {
+  margin-left: 93%;
+  display: flex;
+  gap: 10px;
+}
+
+.external-link {
+  width: 20px;
+  filter: invert(95%) sepia(100%) saturate(14%) hue-rotate(213deg)
+    brightness(104%) contrast(104%);
+  transition: all 0.25s ease-in-out;
+}
+
+.external-link:hover {
+  transform: translateY(-5px);
+  filter: invert(52%) sepia(90%) saturate(4635%) hue-rotate(322deg)
+    brightness(98%) contrast(91%);
+}
+
+.projects__the-odin-book {
+  grid-column-start: 1;
+  grid-column-end: span 2;
 }
