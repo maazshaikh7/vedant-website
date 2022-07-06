@@ -57,7 +57,7 @@
       <div class="hero__text--container">
         <p class="hero__text">
           <h1 class="hero__text--h1">Hi, my name is</h1>
-           <h2 class="hero__text--h2">Matt Wilson.</h2>
+           <h2 class="hero__text--h2 color-red">Matt Wilson.</h2>
            <h3 class="hero__text--h3">I am a software engineer.</h3>
            <p class="hero__text--p">I specialize in building full-stack applications that solve everyday problems
             and have a passion for efficiency and organization. Currently, I am building a
@@ -71,10 +71,10 @@
 
     <section id="section--two" class="about">
         <div class="about__logo--container">
-          <img src="./images/gotenks.svg" class="div about__logo" />
+          <img src="./images/matt-wilson.jpg" class="about__logo" />
         </div>
         <div class="about__text--container">
-          <h2>ABOUT ME</h2>
+          <h2 class="about__text--h2 color-light-blue">ABOUT ME</h2>
           <p class="about__text">
             I am a full-stack developer who fell in love with software and
             computer science after discovering Harvard's CS50 course in 2018. In
@@ -112,54 +112,52 @@
 
     <section id="section--three" class="skills">
       <div class="skills__text--container">
-        <h2>SKILLS</h2>
-        <p class="skills__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Nam explicabo modi cupiditate totam maiores vel dolorem, ab voluptatum
-          nisi omnis voluptates optio illo veritatis, minima doloribus 
-          temporibus assumenda. Laudantium, quam?
-        </p>
+        <h2 class="skills__text--h2">SKILLS</h2>
+          <p class="skills__text">
+            On the front-end I build interactive, responsive, and WC3 compliant
+            front ends with vanilla JavaScript, React, and React Router.
+          </p>
+          <hr>
+          <p class="skills__text">
+            On the back end I create REST API's with NodeJS and Express and
+            connect these API's to databases such as mongoDB / MySQL and to 
+            vanilla JS and React front-ends. 
+          </p>
+          <hr>
+          <p class="skills__text">
+            Git and GitHub are my version control technologies of choice and I 
+            have been working hard to develope industry level compentency with 
+            their toolsets and with my organization within the systems.
+          </p>
+          <hr>
+          <p class="skills__text">
+            I am currently in the process of learning MySQL and Tailwind so
+            that I can use both technologies in my Facebook clone.
+          </p>
       </div>
-      <div class="skills__graph--container">
-        <h3 class="skill__graph--bar--title">HTML</h3>
-        <div class="skill__graph--bar--container">
-          <div class="skill__graph--bar" data-skill-level="60">
-          </div>
-        </div>
-        <h3 class="skill__graph--bar--title">CSS</h3>
-        <div class="skill__graph--bar--container">
-          <div class="skill__graph--bar" data-skill-level="50">
-          </div>
-        </div>
-        <h3 class="skill__graph--bar--title">Javascript</h3>
-        <div class="skill__graph--bar--container">
-          <div class="skill__graph--bar" data-skill-level="75">
-          </div>
-        </div>
-        <h3 class="skill__graph--bar--title">NodeJS</h3>
-        <div class="skill__graph--bar--container">
-          <div class="skill__graph--bar" data-skill-level="75">
-          </div>
-        </div>
-        <h3 class="skill__graph--bar--title">React</h3>
-        <div class="skill__graph--bar--container">
-          <div class="skill__graph--bar" data-skill-level="60">
-          </div>
-        </div>
-        <h3 class="skill__graph--bar--title">Express</h3>
-        <div class="skill__graph--bar--container">
-          <div class="skill__graph--bar" data-skill-level="66">
-          </div>
-        </div>
-        <h3 class="skill__graph--bar--title">MongoDB</h3>
-        <div class="skill__graph--bar--container">
-          <div class="skill__graph--bar" data-skill-level="75">
-          </div>
-        </div>
-        <h3 class="skill__graph--bar--title">MySQL</h3>
-        <div class="skill__graph--bar--container">
-          <div class="skill__graph--bar" data-skill-level="25">
-          </div>
+      <div class="skills__icons--container">
+        <fieldset class="skills__icons--front-end-container">
+          <legend>Front-End</legend>
+          <img class="skills--icon"  src="./images/icons/javascript.svg" alt="">
+          <img class="skills--icon"  src="./images/icons/html.svg" alt="">
+          <img class="skills--icon"  src="./images/icons/css.svg" alt="">
+          <img class="skills--icon"  src="./images/icons/react.svg" alt="">
+          <img class="skills--icon"  src="./images/icons/jest.svg" alt="">
+        </fieldset>
+        <fieldset class="skills__icons--front-end-container">
+          <legend>Back-End</legend>
+          <img class="skills--icon"  src="./images/icons/javascript.svg" alt="">
+          <img class="skills--icon"  src="./images/icons/nodejs.svg" alt="">
+          <img class="skills--icon"  src="./images/icons/icons/express/express-original.svg" alt="">
+          <img class="skills--icon"  src="./images/icons/icons/mongodb/mongodb-original.svg" alt="">
+          <img class="skills--icon skills--icon-mysql"  src="./images/icons/icons/mysql/mysql-original.svg" alt="">
+        </fieldset>
+        <fieldset class="skills__icons--front-end-container">
+          <legend>Version Control and Development</legend>
+          <img class="skills--icon"  src="./images/icons/git.svg" alt="">
+          <img class="skills--icon"  src="./images/icons/icons/github/github-original-wordmark.svg" alt="">
+          <img class="skills--icon"  src="./images/icons/icons/visualstudio/visualstudio-plain.svg" alt="">
+        </fieldset>
         </div>
       </div>
     </section>
@@ -168,30 +166,8 @@
     <!-- SECTION FOUR PROJECTS -->
 
     <section id="section--four" class="projects">
-      <h2 class="projects__title">PROJECTS</h2>
+      <h2 class="projects__title color-light-blue">PROJECTS</h2>
       <div class="projects__container">
-        <div class="projects__square projects__the-odin-book">
-          <div class="external-link-container">
-            <a href="#"><img class="project__square--icon external-link" src="./images/github-project-link.svg" alt=""></a>
-          </div>
-          <span>THE ODIN BOOK <i class="color-red">(in progress)</i></span>
-          <P>A remake of the 1931 board game that was build with test driven
-            development. The game allows users to place their battle ships on
-            their board. Once all ships are placed a computer board will appear
-            allowing the user to begin attacking. User and computer take turns
-            until all of one players ships are sunk.
-          </P>
-          <div>
-            <img class="project__square--icon"  src="./images/icons/javascript.svg" alt="">
-            <img class="project__square--icon"  src="./images/icons/html.svg" alt="">
-            <img class="project__square--icon"  src="./images/icons/css.svg" alt="">
-            <img class="project__square--icon"  src="./images/icons/react.svg" alt="">
-            <img class="project__square--icon"  src="./images/icons/nodejs.svg" alt="">
-            <img class="project__square--icon project__icon--sql"  src="./images/sql-database-generic.svg" alt="">
-            <img class="project__square--icon"  src="./images/icons/jest.svg" alt="">
-            <img class="project__square--icon"  src="./images/icons/git.svg" alt="">
-          </div>
-        </div>
         <div class="projects__square">
           <div class="external-link-container">
             <a href="#"><img class="project__square--icon external-link" src="./images/github-project-link.svg" alt=""></a>
