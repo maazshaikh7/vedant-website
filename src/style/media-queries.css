@@ -1,18 +1,22 @@
 @media (min-width: 320px) and (max-width: 767px) {
-  html,
+  html {
+    padding: 0 1rem 0 1rem;
+  }
+
   body {
     min-width: 100%;
     overflow-x: hidden;
-    padding: 0.25rem 1rem;
+    padding: 0;
   }
 
   /* ====NAVBAR==== */
 
   .navbar {
     width: 100%;
-    min-height: 6vh;
+    min-height: 8vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 1.25rem;
     z-index: 999;
     padding: 0;
@@ -21,6 +25,7 @@
   .navbar__name {
     display: none;
   }
+
 
   .navbar__social-media--container {
     position: static;
@@ -79,6 +84,8 @@
   }
 
   .hero__logo--container {
+    position: relative;
+    top: -30px;
     display: flex;
     justify-content: center;
     max-width: 80vw;
@@ -95,4 +102,67 @@
     max-width: 80vw;
     z-index: 2;
   }
+}
+
+/* ====ABOUT SECTION==== */
+
+.about {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 0;
+}
+
+.about__logo--container {
+  position: static;
+  margin: 0;
+  display: inline-block;
+  padding-top: 0;
+}
+
+.about__logo--container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-right: 5px solid #ef476e;
+  border-bottom: 5px solid #ef476e;
+  border-radius: 5px;
+  left: 25px;
+  top: 25px;
+  z-index: 1;
+}
+
+.about__logo {
+  display: block;
+  max-width: 21.5vw;
+  border-radius: 5px;
+}
+
+.about__text--h2 {
+  font-size: 36px;
+  margin: 1.75rem 0 0 0
+}
+
+.about__text--container {
+  max-width: 80ch;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.about__text--link {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 3px solid #a9b3c1;
+  padding-bottom: 5px;
+  transition: all 0.25s ease-in-out;
+}
+
+.about__text--link:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #ef476e;
 }
