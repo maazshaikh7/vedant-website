@@ -43,6 +43,7 @@ body {
 
 .navbar {
   max-height: 15vh;
+  width: 100%;
   display: flex;
   align-content: center;
   padding: 5vh 5vw;
@@ -336,9 +337,4 @@ body {
   transform: translateY(-5px);
   filter: invert(52%) sepia(90%) saturate(4635%) hue-rotate(322deg)
     brightness(98%) contrast(91%);
-}
-
-.projects__the-odin-book {
-  grid-column-start: 1;
-  grid-column-end: span 2;
 }
