@@ -13,7 +13,6 @@ window.onload = (event) => {
 const navbar = document.getElementById('navbar');
 const navLinks = document.querySelectorAll('.navbar__link');
 const sections = document.querySelectorAll('section');
-const skillsBars = document.querySelectorAll('.skill__graph--bar');
 
 // Cash navbar height as percent for scroll calculations
 const navRect = navbar.getBoundingClientRect();
@@ -53,21 +52,6 @@ window.addEventListener('scroll', (event) => {
       //
       // Add active nav link class if section in window
       navLinks[i].classList.add('active--navlink');
-
-      // Section 3 skills
-      if (section.id === 'section--three') {
-        skillsBars.forEach((bar) => {
-          const skillLevel = bar.dataset.skillLevel;
-          bar.style.width = `${skillLevel}%`;
-          if (skillLevel >= 66) {
-            bar.style.backgroundColor = '#39b54a';
-          } else if (skillLevel > 33 && skillLevel < 66) {
-            bar.style.backgroundColor = '#00b6af';
-          } else {
-            bar.style.backgroundColor = '#ef486e';
-          }
-        });
-      }
     } else {
       //
       // Remove active nav link class if section in window
