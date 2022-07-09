@@ -3,9 +3,63 @@
   src: url('./font/Montserrat-VariableFont_wght.ttf');
 }
 
+:root {
+  --ff-main: 'Montserrat', sans-serif;
+  --color-accent-blue: #a9b3c1;
+  --color-accent-red: #ef476e;
+  --font-color-primary: #fff;
+  --bg-color-primary: #445d7b;
+  --bg-color-primary-drk: #33465c;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+html {
+  padding: 0 0.625rem 0 0.625rem;
+  color: var(--font-color-primary);
+  background-color: var(--bg-color-primary);
+}
+
+body {
+  font-family: var(--ff-main);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-accent-blue);
+  border-bottom: 2px solid var(--color-accent-blue);
+  padding-bottom: 0.125rem;
+}
+
+a:hover {
+  border-color: var(--color-accent-red);
+}
+
+p {
+  line-height: calc(1rem * 1.75);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+fieldset,
+p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+header,
+section {
+  margin-bottom: 3.125rem;
+}
+
+img {
+  width: 3.125rem;
+}
