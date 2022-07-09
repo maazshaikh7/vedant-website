@@ -10,46 +10,36 @@
   </head>
   <body>
     <main>
-      <!-- NAVBAR -->
+      <!--NAVBAR-->
       <nav>
         <div>
-          <a href="#body"> MATT WILSON </a>
-          <div>
-            <a href="mailto: hello@mattwwilson.com">
-              <img src="./icons/contact-icons/email.svg" alt="email logo" />
-            </a>
-            <a href="https://github.com/Mattwwilson34">
-              <img
-                src="./icons/contact-icons/github.svg"
-                alt="github octocat"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/mattwwilson">
-              <img
-                src="./icons/contact-icons/linkedin.svg"
-                alt="linkedIn logo"
-              />
-            </a>
-          </div>
+          <h1><a href="#body"> MATT WILSON </a></h1>
+          <a href="mailto: hello@mattwwilson.com" class="contact-icon">
+            <img src="./icons/contact-icons/email.svg" alt="email logo" />
+          </a>
+          <a href="https://github.com/Mattwwilson34" class="contact-icon">
+            <img src="./icons/contact-icons/github.svg" alt="github octocat" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mattwwilson"
+            class="contact-icon"
+          >
+            <img src="./icons/contact-icons/linkedin.svg" alt="linkedIn logo" />
+          </a>
         </div>
-        <div>
+        <div class="hide-sm-screen">
           <a href="#body">HOME</a> <a href="#section--two">ABOUT</a>
           <a href="#section--three">SKILLS</a>
           <a href="#section--four">PROJECTS</a>
         </div>
       </nav>
-      <!-- SECTION ONE HERO -->
-      <section>
+
+      <!--HEADER-->
+      <header>
         <div>
-          <img
-            src="./icons/logo-icons/logo-svg-no-background.svg"
-            alt="human sitting at desk coding"
-          />
-        </div>
-        <div>
-          <h1>Hi, my name is</h1>
-          <h2>Matt Wilson.</h2>
-          <h3>I'm a software engineer.</h3>
+          <h2>Hi, my name is</h2>
+          <h3>Matt Wilson.</h3>
+          <h4>I'm a software engineer.</h4>
           <p>
             I specialize in building full-stack applications that solve everyday
             problems and have a passion for efficiency and organization.
@@ -57,204 +47,319 @@
             improve my knowledge of MySQL and Tailwind.
           </p>
         </div>
-      </section>
-      <!-- SECTION TWO ABOUT -->
+        <img
+          src="./icons/logo-icons/logo-svg-no-background.svg"
+          alt="bald man working on computer at desk"
+        />
+      </header>
+
+      <!--ABOUT-->
       <section>
-        <div><img src="./images/matt-wilson.jpg" alt="" /></div>
         <div>
           <h2>ABOUT ME</h2>
           <p>
             I am a full-stack developer who fell in love with software and
-            computer science after discovering Harvard's CS50 course in 2018. In
-            May of 2021, I graduated from Duke Universities Physical Therapy
+            computer science after discovering Harvard's CS50 course in 2018.
+          </p>
+
+          <p>
+            In May of 2021, I graduated from Duke Universities Physical Therapy
             program and began pouring 50+ hours a week into building projects
             and learning web development from
             <a href="https://www.udemy.com/course/the-web-developer-bootcamp/"
-              >Udemy courses and </a
-            ><a href="https://www.theodinproject.com/"
+              >Udemy courses</a
+            >
+            and
+            <a href="https://www.theodinproject.com/"
               >The Odin Project. I currently work full-time as a physical
               therapist in Durham, NC, and spend most evenings and weekends
-              coding. </a
-            ><a href="https://www.linkedin.com/in/mattwwilson">
+              coding.</a
+            >
+          </p>
+
+          <p>
+            When I am not working as a PT or coding, I enjoy spending time with
+            my wife Lyra and our cat Gotenks and play for the<a
+              href="https://theaudl.com/flyers"
+              >Raleigh Flyers</a
+            >, North Carolina's professional ultimate frisbee team.
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/mattwwilson">
               I am actively seeking full-time employment as a javascript
-              developer with exerience in mongoDB, express, react, and node. </a
-            ><a href="https://www.theodinproject.com/">
-              When I am not working as a PT or coding, I enjoy spending time
-              with my wife Lyra and our cat Gotenks and play for the </a
-            ><a href="https://theaudl.com/flyers"
-              >Raleigh Flyers, North Carolina's professional ultimate frisbee
-              team.
+              developer with exerience in mongoDB, express, react, and node.
             </a>
           </p>
         </div>
+        <img
+          src="./images/matt-wilson.jpg"
+          alt="white bale man in suit"
+          class="headshot"
+        />
       </section>
-      <!-- SECTION THREE SKILLS -->
+
+      <!--SKILLS-->
       <section>
+        <h2>SKILLS</h2>
         <div>
-          <h2>SKILLS</h2>
+          <fieldset>
+            <legend>Front-End</legend>
+            <img
+              src="./icons/devicon-icons/javascript/javascript-plain.svg"
+              alt=""
+            />
+            <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="" />
+            <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="" />
+            <img src="./icons/devicon-icons/react/react-original.svg" alt="" />
+            <img
+              src="./icons/devicon-icons/jest//jest-plain.svg"
+              alt=""
+              class="filter-white"
+            />
+          </fieldset>
           <p>
             On the front-end I build interactive, responsive, and WC3 compliant
             front ends with vanilla JavaScript, React, and React Router.
           </p>
-          <hr />
+        </div>
+        <div>
+          <fieldset>
+            <legend>Back-End</legend>
+            <img
+              src="./icons/devicon-icons/javascript/javascript-plain.svg"
+              alt=""
+            />
+            <img src="./icons/devicon-icons/nodejs/nodejs-plain.svg" alt="" />
+            <img
+              src="./icons/devicon-icons/express/express-original.svg"
+              alt=""
+            />
+            <img src="./icons/devicon-icons/mongodb/mongodb-plain.svg" alt="" />
+            <img
+              src="./icons/devicon-icons/mysql/mysql-plain.svg"
+              alt=""
+              class="filter-white"
+            />
+          </fieldset>
           <p>
             On the back end I create REST API's with NodeJS and Express and
             connect these API's to databases such as mongoDB / MySQL and to
             vanilla JS and React front-ends.
           </p>
-          <hr />
+        </div>
+
+        <div>
+          <fieldset>
+            <legend>Version Control and Development</legend>
+            <img src="./icons/devicon-icons/git/git-plain.svg" alt="" />
+            <img
+              src="./icons/devicon-icons/github/github-original.svg"
+              alt=""
+            />
+            <img src="./icons/devicon-icons/vscode/vscode-plain.svg" alt="" />
+          </fieldset>
           <p>
             Git and GitHub are my version control technologies of choice and I
             have been working hard to develope industry level compentency with
             their toolsets and with my organization within the systems.
           </p>
-          <hr />
-          <p>
-            I am currently in the process of learning MySQL and Tailwind so that
-            I can use both technologies in my Facebook clone.
-          </p>
-        </div>
-        <div>
-          <fieldset>
-            <legend>Front-End</legend>
-            <img src="./images/icons/javascript.svg" alt="" />
-            <img src="./images/icons/html.svg" alt="" />
-            <img src="./images/icons/css.svg" alt="" />
-            <img src="./images/icons/react.svg" alt="" />
-            <img src="./images/icons/jest.svg" alt="" />
-          </fieldset>
-          <fieldset>
-            <legend>Back-End</legend>
-            <img src="./images/icons/javascript.svg" alt="" />
-            <img src="./images/icons/nodejs.svg" alt="" />
-            <img
-              src="./images/icons/icons/express/express-original.svg"
-              alt=""
-            />
-            <img
-              src="./images/icons/icons/mongodb/mongodb-original.svg"
-              alt=""
-            />
-            <img src="./images/icons/icons/mysql/mysql-original.svg" alt="" />
-          </fieldset>
-          <fieldset>
-            <legend>Version Control and Development</legend>
-            <img src="./images/icons/git.svg" alt="" />
-            <img
-              src="./images/icons/icons/github/github-original-wordmark.svg"
-              alt=""
-            />
-            <img
-              src="./images/icons/icons/visualstudio/visualstudio-plain.svg"
-              alt=""
-            />
-          </fieldset>
         </div>
       </section>
-      <!-- SECTION FOUR PROJECTS -->
+
+      <!--PROJECTS-->
       <section>
-        <h2>FEATURED PROJECTS</h2>
-        <div>
-          <div>
-            <div>
-              <a href="#"
-                ><img src="./images/github-project-link.svg" alt=""
+        <h2>PROJECTS</h2>
+        <div class="project-grid">
+          <div class="project">
+            <div class="project-header">
+              <h3>BLOG API</h3>
+              <a href=""
+                ><img
+                  src="./icons/project-icons/github-project-link.svg"
+                  alt="github octocat" /></a
+              ><a href=""
+                ><img
+                  src="./icons/project-icons/external-link.svg"
+                  alt="box with arrow in corner"
               /></a>
-              <a href="#"><img src="./images/external-link.svg" alt="" /></a>
             </div>
-            <h3>BLOG API</h3>
-            <p>
-              An API only back end built with node, express, mongoDB, and
-              mongoose paired with a react front end. All data is stored in
-              mongoDB and passed to the front-end via fetch calls to the custom
-              backend. User auth was implemented using json web-tokens as well
-              as react state and browser local storage to persist user login.
-            </p>
-            <div>
-              <img src="./images/icons/javascript.svg" alt="" />
-              <img src="./images/icons/html.svg" alt="" />
-              <img src="./images/icons/css.svg" alt="" />
-              <img src="./images/icons/react.svg" alt="" />
-              <img src="./images/icons/nodejs.svg" alt="" />
-              <img src="./images/mongodb-svgrepo-com.svg" alt="" />
-              <img src="./images/icons/git.svg" alt="" />
+            <div class="project-body">
+              <p>
+                An API only back end built with node, express, mongoDB, and
+                mongoose paired with a react front end. All data is stored in
+                mongoDB and passed to the front-end via fetch calls to the
+                custom backend. User auth was implemented using json web-tokens
+                as well as react state and browser local storage to persist user
+                login.
+              </p>
+              <div>
+                <img
+                  src="./icons/devicon-icons/javascript/javascript-original.svg"
+                  alt=""
+                />
+                <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="" />
+                <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="" />
+                <img
+                  src="./icons/devicon-icons/react/react-original.svg"
+                  alt=""
+                />
+                <img
+                  src="./icons/devicon-icons/nodejs/nodejs-plain.svg"
+                  alt=""
+                />
+                <img
+                  src="./icons/devicon-icons/mongodb/mongodb-plain.svg"
+                  alt=""
+                />
+                <img
+                  src="./icons/devicon-icons/express/express-original.svg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
-          <div>
-            <div>
-              <a href="#"
-                ><img src="./images/github-project-link.svg" alt=""
+          <div class="project">
+            <div class="project-header">
+              <h3>BLOG API</h3>
+              <a href=""
+                ><img
+                  src="./icons/project-icons/github-project-link.svg"
+                  alt="github octocat" /></a
+              ><a href=""
+                ><img
+                  src="./icons/project-icons/external-link.svg"
+                  alt="box with arrow in corner"
               /></a>
-              <a href="#"><img src="./images/external-link.svg" alt="" /></a>
             </div>
-            <h3>GAME AND SEEK</h3>
-            <p>
-              A react front end coupled with a firebase backend that allow users
-              to play a photo tagging game based on the nintendo gamecube. Users
-              are timed as they search a large image of many characters. After
-              all characters are found the timer stops, the firebase stores is
-              updated with the players time, and the player is redirected to the
-              leaderboard.
-            </p>
-            <div>
-              <img src="./images/icons/javascript.svg" alt="" />
-              <img src="./images/icons/html.svg" alt="" />
-              <img src="./images/icons/css.svg" alt="" />
-              <img src="./images/icons/react.svg" alt="" />
-              <img src="./images/icons/nodejs.svg" alt="" />
-              <img src="./images/icons/firebase.svg" alt="" />
-              <img src="./images/icons/git.svg" alt="" />
+            <div class="project-body">
+              <p>
+                An API only back end built with node, express, mongoDB, and
+                mongoose paired with a react front end. All data is stored in
+                mongoDB and passed to the front-end via fetch calls to the
+                custom backend. User auth was implemented using json web-tokens
+                as well as react state and browser local storage to persist user
+                login.
+              </p>
+              <div>
+                <img
+                  src="./icons/devicon-icons/javascript/javascript-original.svg"
+                  alt=""
+                />
+                <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="" />
+                <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="" />
+                <img
+                  src="./icons/devicon-icons/react/react-original.svg"
+                  alt=""
+                />
+                <img
+                  src="./icons/devicon-icons/nodejs/nodejs-plain.svg"
+                  alt=""
+                />
+                <img
+                  src="./icons/devicon-icons/mongodb/mongodb-plain.svg"
+                  alt=""
+                />
+                <img
+                  src="./icons/devicon-icons/express/express-original.svg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
-          <div>
-            <div>
-              <a href="#"
-                ><img src="./images/github-project-link.svg" alt=""
+          <div class="project">
+            <div class="project-header">
+              <h3>BLOG API</h3>
+              <a href=""
+                ><img
+                  src="./icons/project-icons/github-project-link.svg"
+                  alt="github octocat" /></a
+              ><a href=""
+                ><img
+                  src="./icons/project-icons/external-link.svg"
+                  alt="box with arrow in corner"
               /></a>
-              <a href="#"><img src="./images/external-link.svg" alt="" /></a>
             </div>
-            <h3>TEXTILES-R-US</h3>
-            <p>
-              A react front end that allows users to search a catalog of various
-              textiles. Users are able to add various textiles to their shopping
-              cart and when done shopping can see a checkout page with a list of
-              all of the items that were added to their cart with the option to
-              update quantaties or delete items from the cart entirely.
-            </p>
-            <div>
-              <img src="./images/icons/javascript.svg" alt="" />
-              <img src="./images/icons/html.svg" alt="" />
-              <img src="./images/icons/css.svg" alt="" />
-              <img src="./images/icons/react.svg" alt="" />
-              <img src="./images/icons/nodejs.svg" alt="" />
-              <img src="./images/icons/git.svg" alt="" />
+            <div class="project-body">
+              <p>
+                An API only back end built with node, express, mongoDB, and
+                mongoose paired with a react front end. All data is stored in
+                mongoDB and passed to the front-end via fetch calls to the
+                custom backend. User auth was implemented using json web-tokens
+                as well as react state and browser local storage to persist user
+                login.
+              </p>
+              <div>
+                <img
+                  src="./icons/devicon-icons/javascript/javascript-original.svg"
+                  alt=""
+                />
+                <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="" />
+                <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="" />
+                <img
+                  src="./icons/devicon-icons/react/react-original.svg"
+                  alt=""
+                />
+                <img
+                  src="./icons/devicon-icons/nodejs/nodejs-plain.svg"
+                  alt=""
+                />
+                <img
+                  src="./icons/devicon-icons/mongodb/mongodb-plain.svg"
+                  alt=""
+                />
+                <img
+                  src="./icons/devicon-icons/express/express-original.svg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
-          <div>
-            <div>
-              <a href="#"
-                ><img src="./images/github-project-link.svg" alt=""
+          <div class="project">
+            <div class="project-header">
+              <h3>BLOG API</h3>
+              <a href=""
+                ><img
+                  src="./icons/project-icons/github-project-link.svg"
+                  alt="github octocat" /></a
+              ><a href=""
+                ><img
+                  src="./icons/project-icons/external-link.svg"
+                  alt="box with arrow in corner"
               /></a>
-              <a href="#"><img src="./images/external-link.svg" alt="" /></a>
             </div>
-            <h3>BATTLESHIP 2021</h3>
-            <p>
-              A remake of the 1931 board game that was build with test driven
-              development. The game allows users to place their battle ships on
-              their board. Once all ships are placed a computer board will
-              appear allowing the user to begin attacking. User and computer
-              take turns until all of one players ships are sunk.
-            </p>
-            <div>
-              <img src="./images/icons/javascript.svg" alt="" />
-              <img src="./images/icons/html.svg" alt="" />
-              <img src="./images/icons/css.svg" alt="" />
-              <img src="./images/icons/react.svg" alt="" />
-              <img src="./images/icons/nodejs.svg" alt="" />
-              <img src="./images/icons/git.svg" alt="" />
-              <img src="./images/icons/jest.svg" alt="" />
-              <img src="./images/icons/webpack.svg" alt="" />
-              <img src="./images/icons/babel.svg" alt="" />
+            <div class="project-body">
+              <p>
+                An API only back end built with node, express, mongoDB, and
+                mongoose paired with a react front end. All data is stored in
+                mongoDB and passed to the front-end via fetch calls to the
+                custom backend. User auth was implemented using json web-tokens
+                as well as react state and browser local storage to persist user
+                login.
+              </p>
+              <div>
+                <img
+                  src="./icons/devicon-icons/javascript/javascript-original.svg"
+                  alt=""
+                />
+                <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="" />
+                <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="" />
+                <img
+                  src="./icons/devicon-icons/react/react-original.svg"
+                  alt=""
+                />
+                <img
+                  src="./icons/devicon-icons/nodejs/nodejs-plain.svg"
+                  alt=""
+                />
+                <img
+                  src="./icons/devicon-icons/mongodb/mongodb-plain.svg"
+                  alt=""
+                />
+                <img
+                  src="./icons/devicon-icons/express/express-original.svg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
