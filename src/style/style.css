@@ -20,6 +20,8 @@
 
 html {
   padding: 0 0.625rem 0 0.625rem;
+  scroll-behavior: smooth;
+  scroll-padding-top: 20rem;
   color: var(--font-color-primary);
   background-color: var(--bg-color-primary);
 }
