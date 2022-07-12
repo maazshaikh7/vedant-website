@@ -63,3 +63,7 @@ section {
 img {
   width: 3.125rem;
 }
+
+.hide-lg-screen {
+  display: none;
+}

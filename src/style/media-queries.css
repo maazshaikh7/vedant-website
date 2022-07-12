@@ -45,6 +45,38 @@
     width: 2.5rem;
   }
 
+  .hamburger-menu {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .line {
+    height: 5px;
+    width: 100%;
+    background-color: var(--color-accent-blue);
+    border-radius: 10px;
+    transition: 0.25s linear;
+  }
+
+  .line1-open-menu {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .line2-open-menu {
+    display: none;
+  }
+
+  .line3-open-menu {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
   /*      HEADER      */
   /* ================ */
 
