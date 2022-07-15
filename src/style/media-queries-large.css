@@ -1,0 +1,109 @@
+:root {
+    --ff-main: 'Montserrat', sans-serif;
+    --color-accent-blue: #a9b3c1;
+    --color-accent-red: #ef476e;
+    --font-color-primary: #fff;
+    --bg-color-primary: #445d7b;
+    --bg-color-primary-drk: #33465c;
+  }
+
+@media (min-width: 47.0625rem) and (max-width: 90rem) {
+
+/*        GLOBAL       */
+/* ================== */
+html {
+    padding: 0 2rem;
+    scroll-padding-top: 8rem;
+}
+
+header,
+section {
+margin: 3.125rem 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+    /*        NAV       */
+    /* ================ */
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color-primary);
+    padding-top: 2rem;
+}
+
+nav h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    border: none;
+}
+
+nav div:first-child a {
+    border: none;
+    margin: 0.125rem;
+}
+
+nav div:first-child img {
+    width: 2.5rem;
+}
+
+.nav-link-container a {
+    font-size: 1.25rem;
+    margin: 0 1rem;
+}
+
+/*        HEADER       */
+/* ================== */
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+header img {
+    width: 25rem;
+}
+
+header h2,h3,h4 {
+    margin: 1rem 0  ;
+}
+
+header h3 {
+    font-size: 2rem;
+    color: var(--color-accent-red);
+}
+
+header h4 {
+    font-size: 2rem;
+
+}
+
+/*        ABOUT       */
+/* ================== */
+#about {
+    display: flex;  
+    justify-content: space-around;
+}
+
+#about div {
+    max-width: 45ch;
+}
+
+#about div p {
+    margin: 1rem 0;
+}
+
+#about img {
+    width: 15rem;
+    align-self: center;
+}
+
+}
