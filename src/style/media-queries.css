@@ -8,6 +8,20 @@
 }
 
 @media (min-width: 20rem) and (max-width: 47rem) {
+  
+  /*    GLOBALS     */
+  /* ================ */
+
+  html {
+    padding: 0 0.625rem 0 0.625rem;
+    scroll-behavior: smooth;
+    scroll-padding-top: 22rem;
+    color: var(--font-color-primary);
+    background-color: var(--bg-color-primary);
+  }
+
+
+
   /*    UTILITIES     */
   /* ================ */
 
@@ -88,6 +102,10 @@
 
   /*      HEADER      */
   /* ================ */
+
+  header {
+    display: block;
+  }
 
   header h2,
   h3,
