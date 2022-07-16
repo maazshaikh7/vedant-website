@@ -185,6 +185,13 @@
     padding: 0.5rem;
   }
 
+  .project h4 {
+    font-size: 1rem;
+    margin: 0;
+    font-style: italic;
+    color: var(--color-accent-red);
+  }
+
   .project-header {
     display: flex;
     align-items: center;
@@ -209,12 +216,12 @@
     width: 1.75rem;
   }
 
-  .project-body > div {
+  .project-icon-container {
     display: flex;
     justify-content: space-around;
   }
 
-  .project-body img {
+  .project-icon-container img {
     width: 2rem;
   }
 }
