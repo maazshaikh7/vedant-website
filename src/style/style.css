@@ -26,6 +26,11 @@ html {
   background-color: var(--bg-color-primary);
 }
 
+main {
+  max-width: 90rem;
+  margin: auto;
+}
+
 body {
   font-family: var(--ff-main);
 }
