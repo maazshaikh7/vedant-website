@@ -88,7 +88,6 @@ nav div:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.3125rem;
 }
 
 nav > div:nth-child(1) > div > a > img {
