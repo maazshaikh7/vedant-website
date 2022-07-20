@@ -1,7 +1,7 @@
 :root {
   --ff-main: 'Montserrat', sans-serif;
   --color-accent-blue: #a9b3c1;
-  --color-accent-red: #ef476e;
+  --color-accent-red: #fc92a2;
   --font-color-primary: #fff;
   --bg-color-primary: #445d7b;
   --bg-color-primary-drk: #33465c;
@@ -40,7 +40,7 @@
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: var(--bg-color-primary);
+    background-color: var(--bg-color-primary-drk);
     padding-top: 2rem;
   }
 
@@ -56,7 +56,7 @@
   }
 
   nav div:first-child img {
-    width: 2.5rem;
+    width: 1.75rem;
   }
 
   .nav-link-container a {
@@ -71,6 +71,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
+    margin: 20vh 0 25vh 0;
   }
 
   header img {
@@ -99,6 +100,7 @@
   #about {
     display: flex;
     justify-content: space-around;
+    margin: 20vh 0 25vh 0;
   }
 
   #about div {
@@ -138,6 +140,10 @@
 
   /*       SKILLS       */
   /* ================== */
+
+  #skills {
+    margin: 20vh 0 25vh 0;
+  }
 
   #skills div {
     display: flex;

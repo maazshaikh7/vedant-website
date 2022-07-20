@@ -1,24 +1,14 @@
 :root {
   --ff-main: 'Montserrat', sans-serif;
-  --color-accent-blue: #a9b3c1;
-  --color-accent-red: #ef476e;
+  --color-accent-red: #fc92a2;
   --font-color-primary: #fff;
   --bg-color-primary: #445d7b;
   --bg-color-primary-drk: #33465c;
+  --filter-white: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
 }
 
 @media (min-width: 20rem) and (max-width: 47rem) {
-  /*    GLOBALS     */
-  /* ================ */
-
-  html {
-    padding: 0 0.625rem 0 0.625rem;
-    scroll-behavior: smooth;
-    scroll-padding-top: 22rem;
-    color: var(--font-color-primary);
-    background-color: var(--bg-color-primary);
-  }
-
   /*    UTILITIES     */
   /* ================ */
 
@@ -42,7 +32,6 @@
     padding: 0.3125rem 0 0.3125rem 0;
     position: sticky;
     top: 0;
-    background-color: var(--bg-color-primary);
   }
 
   nav h1 {
@@ -79,7 +68,7 @@
   .line {
     height: 5px;
     width: 100%;
-    background-color: var(--color-accent-blue);
+    background-color: var(--font-color-primary);
     border-radius: 10px;
     transition: 0.25s linear;
   }

@@ -5,11 +5,12 @@
 
 :root {
   --ff-main: 'Montserrat', sans-serif;
-  --color-accent-blue: #a9b3c1;
-  --color-accent-red: #ef476e;
+  --color-accent-red: #fc92a2;
   --font-color-primary: #fff;
   --bg-color-primary: #445d7b;
   --bg-color-primary-drk: #33465c;
+  --filter-white: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
 }
 
 *,
@@ -23,7 +24,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 22rem;
   color: var(--font-color-primary);
-  background-color: var(--bg-color-primary);
+  background-color: var(--bg-color-primary-drk);
 }
 
 main {
@@ -36,17 +37,19 @@ body {
 }
 
 nav {
+  background-color: var(--bg-color-primary-drk);
   z-index: 999;
 }
 
 a {
   text-decoration: none;
-  color: var(--color-accent-blue);
-  border-bottom: 2px solid var(--color-accent-blue);
+  color: var(--font-color-primary);
+  border-bottom: 3px solid var(--color-accent-red);
   padding-bottom: 0.3125rem;
 }
 
 a:hover {
+  color: var(--color-accent-red);
   border-color: var(--color-accent-red);
 }
 
