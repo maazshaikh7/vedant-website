@@ -48,19 +48,21 @@
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
     border: none;
+    text-align: center;
   }
 
   nav div:first-child a {
     border: none;
-    margin: 0.125rem;
+    margin: 0;
+    padding: 0;
   }
 
   nav div:first-child img {
     width: 1.75rem;
   }
 
-  .nav-link-container a {
-    font-size: 1.25rem;
+  nav .nav-link-container a {
+    font-size: 1rem;
     margin: 0 1rem;
   }
 
