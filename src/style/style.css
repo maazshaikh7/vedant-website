@@ -54,6 +54,10 @@ a:hover {
   border-color: var(--color-accent-red);
 }
 
+header p {
+  max-width: 80ch;
+}
+
 p {
   line-height: calc(1rem * 1.75);
 }
