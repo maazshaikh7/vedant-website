@@ -11,6 +11,7 @@
   --bg-color-primary-drk: #33465c;
   --filter-white: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
     brightness(102%) contrast(102%);
+  --filter-red:  invert(81%) sepia(25%) saturate(3287%) hue-rotate(298deg) brightness(104%) contrast(98%);
 }
 
 *,
@@ -83,8 +84,29 @@ img {
   width: 3.125rem;
 }
 
+nav div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3125rem;
+}
+
+nav > div:nth-child(1) > div > a > img {
+  transition: all 0.25s ease-in-out;
+}
+
+nav > div:nth-child(1) > div > a > img:hover {
+  transform: translateY(-3px);
+}
+
 .hide-lg-screen {
   display: none;
+}
+
+.nav-social-link-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .about-seeking-work-text {
