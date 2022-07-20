@@ -1,9 +1,9 @@
 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
-	<title>icons8-github-100</title>
+	<title>github-svg</title>
 	<defs>
-		<image  width="80" height="79" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABPAQMAAABGX9CgAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAqbPBUEXQfQAAAAJ0Uk5TAP9bkSK1AAABJElEQVR4nKXSwW2FMAwGYEeRypENmlGyUido2KAjdJSH1EPXQOoCHHOgcf37JzweqnopFz5BYjuORUSC6iR8kmrdqfZQEZydI7j2pX1xAduxi/siiX0DufQADJFIhMjk1mMxmuoR7c7QOVmGDfiyHFErwkXjoNXytWDpRq1RbzVYOmOY5QVMrDrY68TcuXXGR5bOZtzuPH1dGaFJ75EVzGM/sIDzH8zg9G/OV16znSpbL7Q2/3Liwdk4CaCny8bMaOo9w+K40/IVENdTg993+kYS59iK7SvqN5RtbQYHfbfAHjLqm/qo4I4/O4N+NJ8lS+8HGjkly8Gy7OVaeasTB0jVWX3ZBB7/Bt8cSe8RyW6BHPAEcuxHkI2LIDsrryJPlDzz9QO7BX5Ba0T1QwAAAABJRU5ErkJggg=="/>
+		<image  width="80" height="79" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABPAQMAAABGX9CgAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAA////pdmf3QAAAAJ0Uk5TAP9bkSK1AAABJElEQVR4nKXSwW2FMAwGYEeRypENmlGyUido2KAjdJSH1EPXQOoCHHOgcf37JzweqnopFz5BYjuORUSC6iR8kmrdqfZQEZydI7j2pX1xAduxi/siiX0DufQADJFIhMjk1mMxmuoR7c7QOVmGDfiyHFErwkXjoNXytWDpRq1RbzVYOmOY5QVMrDrY68TcuXXGR5bOZtzuPH1dGaFJ75EVzGM/sIDzH8zg9G/OV16znSpbL7Q2/3Liwdk4CaCny8bMaOo9w+K40/IVENdTg993+kYS59iK7SvqN5RtbQYHfbfAHjLqm/qo4I4/O4N+NJ8lS+8HGjkly8Gy7OVaeasTB0jVWX3ZBB7/Bt8cSe8RyW6BHPAEcuxHkI2LIDsrryJPlDzz9QO7BX5Ba0T1QwAAAABJRU5ErkJggg=="/>
 	</defs>
 	<style>
 	</style>
-	<use id="Background" href="#img1" x="10" y="10"/>
+	<use id="img1" href="#img1" x="10" y="10"/>
 </svg>
