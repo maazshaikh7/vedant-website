@@ -4,8 +4,6 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 const lines = document.querySelectorAll('.line');
 const projectLinks = document.querySelectorAll('#project-external-link');
 
-console.log(projectLinks);
-
 hamburgerMenu.addEventListener('click', (event) => {
   // Apply classes on click
   if (hamburgerMenu.classList.contains('open')) {
