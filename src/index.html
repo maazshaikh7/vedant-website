@@ -1,384 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Matt Wilson's personal website.">
-    <title>Matt Wilson</title>
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/media-queries.css" />
-    <link rel="stylesheet" href="./style/media-queries-large.css" />
-    <link rel="stylesheet" href="./style/media-queries-xl.css" />
-  </head>
-  <body>
-    <main id="main">
-      <nav>
-        <div>
-          <h1><a href="#main"> MATT WILSON </a></h1>
-          <div class="nav-social-link-container">
-            <a href="mailto: hello@mattwwilson.com" class="contact-icon">
-              <img src="./icons/contact-icons/email.svg" alt="email logo" />
-            </a>
-            <a href="https://github.com/Mattwwilson34" class="contact-icon">
-              <img src="./icons/contact-icons/github.svg" alt="github octocat" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/mattwwilson"
-              class="contact-icon"
-            >
-              <img src="./icons/contact-icons/linkedin.svg" alt="linkedIn logo" />
-            </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Matt Wilson's personal website.">
+  <title>Matt Wilson</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/media-queries.css" />
+  <link rel="stylesheet" href="./style/media-queries-large.css" />
+  <link rel="stylesheet" href="./style/media-queries-xl.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+
+<body>
+  <main id="main">
+    <nav>
+      <div>
+        <h1><a href="#main"> MATT WILSON </a></h1>
+        <div class="nav-social-link-container">
+          <a href="mailto: hello@mattwwilson.com" class="contact-icon">
+            <img src="./icons/contact-icons/email.svg" alt="email logo" />
+          </a>
+          <a href="https://github.com/Mattwwilson34" class="contact-icon">
+            <img src="./icons/contact-icons/github.svg" alt="github octocat" />
+          </a>
+          <a href="https://www.linkedin.com/in/mattwwilson" class="contact-icon">
+            <img src="./icons/contact-icons/linkedin.svg" alt="linkedIn logo" />
+          </a>
+        </div>
+      </div>
+      <div class="nav-link-container hide-sm-screen">
+        <a href="#main">HOME</a> <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="./resume/matt_wilson_resume.pdf" id="nav-resume">RESUME</a>
+      </div>
+      <div class="hamburger-menu hide-lg-screen">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+    <header id="header">
+      <div>
+        <h2>Hi, my name is</h2>
+        <h3>Matt Wilson.</h3>
+        <h4>I'm a software engineer.</h4>
+        <p>
+          My skills include TypeScript, RESTful API development, and full-stack
+          web applications, with a strong understanding of front-end technologies
+          like React, HTML, CSS, and JavaScript, and back-end technologies like
+          Node, Express, and MongoDB.
+        </p>
+        <br>
+        <p>I approach each project with a problem-solving mindset, using my technical
+          abilities to find the best solutions and deliver high-quality results.
+        </p>
+      </div>
+      <img src="./icons/logo-icons/logo-svg-no-background.svg" alt="bald man working on computer at desk" />
+    </header>
+
+    <section id="about">
+      <div>
+        <h2>ABOUT ME</h2>
+        <p>
+          I am a curious problem solver with a passion for software and computer
+          science, which was ignited after taking Harvard's
+          <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0">CS50</a>
+          course in 2018.
+        </p>
+        <p>
+          Upon graduating from Duke University's Physical Therapy program in May 2021,
+          I dedicated my evenings and weekends to building web development projects
+          and honing my skills through courses on
+          <a href="udemy.com">Udemy</a> and <a href="https://www.theodinproject.com">The Odin Book.</a>
+          My drive and continued curiosity for software development led me to
+          transition away from physical therapy to pursue a full-time career in
+          web development.
+        </p>
+
+        <p>I bring a strong foundation in JavaScript, HTML, CSS, MongoDB, Express,
+          React, and Node, as well as a dedication to delivering clean, efficient,
+          and scalable code.</p>
+
+        <p>
+          When not coding, I enjoy spending time with my wife Lyra and our cat Gotenks,
+          as well as playing for North Carolina's professional ultimate frisbee
+          team, the <a href="https://theaudl.com/flyers">Carolina Flyers</a>.
+        </p>
+
+      </div>
+      <div class="logo-container">
+        <img src="./images/matt-wilson.jpg" alt="white bale man in suit" class="headshot" />
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>SKILLS</h2>
+      <div>
+        <fieldset>
+          <legend>Front-End</legend>
+
+
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+
+          <img src="./icons/devicon-icons/javascript/javascript-plain.svg" alt="javascript icon" />
+          <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="html five icon" />
+          <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="css three icon" />
+          <img src="./icons/devicon-icons/react/react-original.svg" alt=" react icon" />
+          <img src="./icons/devicon-icons/jest//jest-plain.svg" alt="jest icon" />
+        </fieldset>
+        <p>
+          On the front-end, I build dynamic, responsive, and user-friendly web
+          applications with a focus on clean code and efficient performance. </p>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Back-End</legend>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+          <img src="./icons/devicon-icons/javascript/javascript-plain.svg" alt="jsvascript icon" />
+          <img src="./icons/devicon-icons/nodejs/nodejs-plain.svg" alt="node js icon" />
+          <img src="./icons/devicon-icons/express/express-original.svg" alt="express icon" />
+          <img src="./icons/devicon-icons/mongodb/mongodb-plain.svg" alt="mongo DB icon" />
+          <img src="./icons/devicon-icons/mysql/mysql-plain.svg" alt="my SQL icon" />
+        </fieldset>
+        <p>
+          On the back end, I design and implement scalable and efficient RESTful
+          APIs, integrating them with front-end technologies, and handling data
+          storage.
+        </p>
+      </div>
+
+      <div>
+        <fieldset>
+          <legend>Version Control and Development</legend>
+          <img src="./icons/devicon-icons/git/git-plain.svg" alt="git icon" />
+          <img src="./icons/devicon-icons/github/github-original.svg" alt="git hub icon" />
+          <img src="./icons/devicon-icons/npm/npm-original-wordmark.svg" alt="vs code icon" />
+          <img src="./icons/devicon-icons/yarn/yarn-original.svg" alt="vs code icon" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" />
+          <img src="./icons/devicon-icons/vscode/vscode-plain.svg" alt="vs code icon" />
+
+
+        </fieldset>
+        <p>
+          Git and Github are my primary tools for version control and I have a
+          solid foundation in their core concepts using them effectively in all
+          projects, both personal and professional.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>PROJECTS</h2>
+      <div class="project-grid">
+        <div class="project">
+          <div class="project-header">
+            <h3>THE ODIN BOOK</h3>
+
+            <a href="https://github.com/Mattwwilson34/the-odin-book"><img
+                src="./icons/project-icons/github-project-link.svg" alt="github octocat" /></a><a href="#/"
+              id="project-external-link"><img src="./icons/project-icons/external-link.svg"
+                alt="box with arrow in corner" /></a>
           </div>
-        </div>
-        <div class="nav-link-container hide-sm-screen">
-          <a href="#main">HOME</a> <a href="#about">ABOUT</a>
-          <a href="#skills">SKILLS</a>
-          <a href="#projects">PROJECTS</a>
-          <a href="./resume/matt_wilson_resume.pdf" id="nav-resume">RESUME</a>
-        </div>
-        <div class="hamburger-menu hide-lg-screen">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
-
-      <header id="header">
-        <div>
-          <h2>Hi, my name is</h2>
-          <h3>Matt Wilson.</h3>
-          <h4>I'm a software engineer.</h4>
-          <p>
-            I specialize in building full-stack applications that solve everyday
-            problems. I have a passion for efficiency and organization.
-            Currently, I am building a ground up clone of Meta's platform to
-            improve my knowledge of MySQL and Tailwind.
-          </p>
-        </div>
-        <img
-          src="./icons/logo-icons/logo-svg-no-background.svg"
-          alt="bald man working on computer at desk"
-        />
-      </header>
-
-      <section id="about">
-        <div>
-          <h2>ABOUT ME</h2>
-          <p>
-            I am a full-stack developer who fell in love with software and
-            computer science after discovering Harvard's CS50 course in 2018.
-          </p>
-
-          <p>
-            In May of 2021, I graduated from Duke Universities Physical Therapy
-            program and began pouring 50+ hours a week into building projects
-            and learning web development from
-            <a href="https://www.udemy.com/course/the-web-developer-bootcamp/"
-              >Udemy courses</a
-            >
-            and
-            <a href="https://www.theodinproject.com/"
-              >The Odin Project</a>. I currently work full-time as a physical
-              therapist in Durham, NC, and spend most evenings and weekends
-              coding.
-          </p>
-
-          <p>
-            When I am not working as a PT or coding, I enjoy spending time with
-            my wife Lyra and our cat Gotenks. I also play for the <a
-              href="https://theaudl.com/flyers"
-              >Raleigh Flyers</a
-            >, North Carolina's professional ultimate frisbee team.
-          </p>
-          <p>
-              <span class="about-seeking-work-text">
-                I am actively seeking full-time employment as a web developer.</span> 
-                I have exerience in javascript, html, css, mongoDB, express, react, and node.
-              
-          </p>
-        </div>
-        <div class="logo-container">
-          <img
-            src="./images/matt-wilson.jpg"
-            alt="white bale man in suit"
-            class="headshot"
-          />
-        </div>
-      </section>
-
-      <section id="skills">
-        <h2>SKILLS</h2>
-        <div>
-          <fieldset>
-            <legend>Front-End</legend>
-            <img
-              src="./icons/devicon-icons/javascript/javascript-plain.svg"
-              alt="javascript icon"
-            />
+          <h4>in progress</h4>
+          <div class="project-body">
+            <p>
+              A complete bottom up clone of Facebook with features inlcuding: login/registration,
+              posts, comments, friends, chat, photos, videos.
+            <p>Focus: Build backend with Node, Express, MySQL and connect to a React and Tailwind
+              font-end.
+            </p>
+            </p>
+          </div>
+          <div class="project-icon-container">
+            <img src="./icons/devicon-icons/javascript/javascript-plain.svg" alt="javascript icon" />
             <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="html five icon" />
             <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="css three icon" />
-            <img src="./icons/devicon-icons/react/react-original.svg" alt=" react icon" />
-            <img
-              src="./icons/devicon-icons/jest//jest-plain.svg"
-              alt="jest icon"
-              
-            />
-          </fieldset>
-          <p>
-            On the front-end I build interactive, responsive, and WC3 compliant
-            websites and applications with vanilla JavaScript, React, and React Router.
-          </p>
-        </div>
-        <div>
-          <fieldset>
-            <legend>Back-End</legend>
-            <img
-              src="./icons/devicon-icons/javascript/javascript-plain.svg"
-              alt="jsvascript icon"
-            />
+            <img src="./icons/devicon-icons/react/react-original.svg" alt="react icon" />
             <img src="./icons/devicon-icons/nodejs/nodejs-plain.svg" alt="node js icon" />
-            <img
-              src="./icons/devicon-icons/express/express-original.svg"
-              alt="express icon"
-            />
-            <img src="./icons/devicon-icons/mongodb/mongodb-plain.svg" alt="mongo DB icon" />
-            <img
-              src="./icons/devicon-icons/mysql/mysql-plain.svg"
-              alt="my SQL icon"
-              
-            />
-          </fieldset>
-          <p>
-            On the back end I create REST API's with NodeJS and Express and
-            connect these API's to databases such as mongoDB, MySQL, and
-            vanilla JS / React front-ends.
-          </p>
-        </div>
-
-        <div>
-          <fieldset>
-            <legend>Version Control and Development</legend>
-            <img src="./icons/devicon-icons/git/git-plain.svg" alt="git icon" />
-            <img
-              src="./icons/devicon-icons/github/github-original.svg"
-              alt="git hub icon"
-            />
-            <img src="./icons/devicon-icons/npm/npm-original-wordmark.svg" alt="vs code icon" />
-            <img src="./icons/devicon-icons/yarn/yarn-original.svg" alt="vs code icon" />
-            <img src="./icons/devicon-icons/vscode/vscode-plain.svg" alt="vs code icon" />
-          </fieldset>
-          <p>
-            Git and GitHub are my version control technologies of choice and I
-            have been working hard to develope industry level compentency with
-            their toolsets and with my organization within the systems.
-          </p>
-        </div>
-      </section>
-
-      <section id="projects">
-        <h2>PROJECTS</h2>
-        <div class="project-grid">
-          <div class="project">
-            <div class="project-header">
-              <h3>THE ODIN BOOK</h3>
-              
-              <a href="https://github.com/Mattwwilson34/the-odin-book"
-                ><img
-                  src="./icons/project-icons/github-project-link.svg"
-                  alt="github octocat" /></a
-              ><a href="#/" id="project-external-link"
-                ><img
-                  src="./icons/project-icons/external-link.svg"
-                  alt="box with arrow in corner"
-              /></a>
-            </div>
-            <h4>in progress</h4>
-            <div class="project-body">
-              <p>
-                A complete bottom up clone of Facebook with features inlcuding: login/registration,
-                posts, comments, friends, chat, photos, videos.
-                <p>Focus: Build backend with Node, Express, MySQL and connect to a React and Tailwind
-                  font-end.
-                </p>
-              </p>
-            </div>
-            <div class="project-icon-container">
-              <img
-                src="./icons/devicon-icons/javascript/javascript-plain.svg"
-                alt="javascript icon"
-              />
-              <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="html five icon" />
-              <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="css three icon" />
-              <img
-                src="./icons/devicon-icons/react/react-original.svg"
-                alt="react icon"
-              />
-              <img
-                src="./icons/devicon-icons/nodejs/nodejs-plain.svg"
-                alt="node js icon"
-              />
-              <img
-              src="./icons/devicon-icons/mysql/mysql-plain.svg"
-              alt="my SQL icon"
-              
-            />
-              <img
-                src="./icons/devicon-icons/express/express-original.svg"
-                alt="express icon"
-              />
-            </div>
-          </div>
-          <div class="project">
-            <div class="project-header">
-              <h3>BLOG API</h3>
-              <a href="https://github.com/Mattwwilson34/express-blog-api"
-                ><img
-                  src="./icons/project-icons/github-project-link.svg"
-                  alt="github octocat" /></a
-              ><a href="#/" id="project-external-link"
-                ><img
-                  src="./icons/project-icons/external-link.svg"
-                  alt="box with arrow in corner"
-              /></a>
-            </div>
-            <h4>complete</h4>
-            <div class="project-body">
-              <p>
-                An application where were user's can create/read blog posts and comments anonymously or after creating/logging into their account.
-                <p>
-                  Focus: Building a RESTful API back-end with Node, Express, and MongoDB and then connecting this to a React front-end.  User auth was implemented using JSON web-tokens and local storage to persist user login.
-                </p>
-              </p>
-            </div>
-            <div class="project-icon-container">
-              <img
-                src="./icons/devicon-icons/javascript/javascript-plain.svg"
-                alt="javascript icon"
-              />
-              <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="html five icon" />
-              <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="css three icon" />
-              <img
-                src="./icons/devicon-icons/react/react-original.svg"
-                alt="react icon"
-              />
-              <img
-                src="./icons/devicon-icons/nodejs/nodejs-plain.svg"
-                alt="node js icon"
-              />
-              <img
-                src="./icons/devicon-icons/mongodb/mongodb-plain.svg"
-                alt="mondo DB icon"
-              />
-              <img
-                src="./icons/devicon-icons/express/express-original.svg"
-                alt="express icon"
-              />
-            </div>
-          </div>
-          <div class="project">
-            <div class="project-header">
-              <h3>GAMER TAG</h3>
-              <a href="https://github.com/Mattwwilson34/photo-tagging-app"
-                ><img
-                  src="./icons/project-icons/github-project-link.svg"
-                  alt="github octocat" /></a
-              ><a href="#/" id="project-external-link"
-                ><img
-                  src="./icons/project-icons/external-link.svg"
-                  alt="box with arrow in corner"
-              /></a>
-            </div>
-            <h4>complete</h4>
-            <div class="project-body">
-              <p>
-                An application where users search and tag Nintendo-themed characters while being timed. 
-                <p>
-                  Focus: Connecting a React front-end to a firebase backend to persist user score data and character location data for reference on user selection. 
-                </p>
-              </p>
-            </div>
-            <div class="project-icon-container">
-              <img
-                src="./icons/devicon-icons/javascript/javascript-plain.svg"
-                alt="javascript icon"
-              />
-              <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="html five icon" />
-              <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="css three icon" />
-              <img
-                src="./icons/devicon-icons/react/react-original.svg"
-                alt="react icon"
-              />
-              <img
-                src="./icons/devicon-icons/nodejs/nodejs-plain.svg"
-                alt="node js icon"
-              />
-              <img
-                src="./icons/devicon-icons/firebase/firebase-plain.svg"
-                alt="firebase icon"
-              />
-            </div>
-          </div>
-          <div class="project">
-            <div class="project-header">
-              <h3>WEATHER API</h3>
-              <a href="https://github.com/Mattwwilson34/TOP-weather-app-2.1"
-                ><img
-                  src="./icons/project-icons/github-project-link.svg"
-                  alt="github octocat" /></a
-              ><a href="#/" id="project-external-link"
-                ><img
-                  src="./icons/project-icons/external-link.svg"
-                  alt="box with arrow in corner"
-              /></a>
-            </div>
-            <h4>complete</h4>
-            <div class="project-body">
-              <p>
-                An application used to gather weather data via a user chosen zipcode, or a random US location. 
-                <p>
-                  Focus: Use vanilla JS / Axios with TDD to hit multiple API's for weather / location data while protecting API keys with
-                  express backend server and dotenv files.
-                </p>
-              </p>
-            </div>
-            <div class="project-icon-container">
-              <img
-                src="./icons/devicon-icons/javascript/javascript-plain.svg"
-                alt="javascript icon"
-              />
-              <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="html five icon" />
-              <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="css three icon" />
-              <img
-                src="./icons/devicon-icons/jest/jest-plain.svg"
-                alt="react icon"
-              />
-              <img
-                src="./icons/devicon-icons/nodejs/nodejs-plain.svg"
-                alt="node js icon"
-              />
-              <img
-              src="./icons/devicon-icons/express/express-original.svg"
-              alt="express icon"
-            />
-              <img
-              src="./icons/webpack-icons/icon-square-small.svg"
-              alt="express icon"
-            />
-            </div>
+            <img src="./icons/devicon-icons/mysql/mysql-plain.svg" alt="my SQL icon" />
+            <img src="./icons/devicon-icons/express/express-original.svg" alt="express icon" />
           </div>
         </div>
-      </section>
+        <div class="project">
+          <div class="project-header">
+            <h3>BLOG API</h3>
+            <a href="https://github.com/Mattwwilson34/express-blog-api"><img
+                src="./icons/project-icons/github-project-link.svg" alt="github octocat" /></a><a href="#/"
+              id="project-external-link"><img src="./icons/project-icons/external-link.svg"
+                alt="box with arrow in corner" /></a>
+          </div>
+          <h4>complete</h4>
+          <div class="project-body">
+            <p>
+              An application where were user's can create/read blog posts and comments anonymously or after
+              creating/logging into their account.
+            <p>
+              Focus: Building a RESTful API back-end with Node, Express, and MongoDB and then connecting this to a React
+              front-end. User auth was implemented using JSON web-tokens and local storage to persist user login.
+            </p>
+            </p>
+          </div>
+          <div class="project-icon-container">
+            <img src="./icons/devicon-icons/javascript/javascript-plain.svg" alt="javascript icon" />
+            <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="html five icon" />
+            <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="css three icon" />
+            <img src="./icons/devicon-icons/react/react-original.svg" alt="react icon" />
+            <img src="./icons/devicon-icons/nodejs/nodejs-plain.svg" alt="node js icon" />
+            <img src="./icons/devicon-icons/mongodb/mongodb-plain.svg" alt="mondo DB icon" />
+            <img src="./icons/devicon-icons/express/express-original.svg" alt="express icon" />
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-header">
+            <h3>GAMER TAG</h3>
+            <a href="https://github.com/Mattwwilson34/photo-tagging-app"><img
+                src="./icons/project-icons/github-project-link.svg" alt="github octocat" /></a><a href="#/"
+              id="project-external-link"><img src="./icons/project-icons/external-link.svg"
+                alt="box with arrow in corner" /></a>
+          </div>
+          <h4>complete</h4>
+          <div class="project-body">
+            <p>
+              An application where users search and tag Nintendo-themed characters while being timed.
+            <p>
+              Focus: Connecting a React front-end to a firebase backend to persist user score data and character
+              location data for reference on user selection.
+            </p>
+            </p>
+          </div>
+          <div class="project-icon-container">
+            <img src="./icons/devicon-icons/javascript/javascript-plain.svg" alt="javascript icon" />
+            <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="html five icon" />
+            <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="css three icon" />
+            <img src="./icons/devicon-icons/react/react-original.svg" alt="react icon" />
+            <img src="./icons/devicon-icons/nodejs/nodejs-plain.svg" alt="node js icon" />
+            <img src="./icons/devicon-icons/firebase/firebase-plain.svg" alt="firebase icon" />
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-header">
+            <h3>WEATHER API</h3>
+            <a href="https://github.com/Mattwwilson34/TOP-weather-app-2.1"><img
+                src="./icons/project-icons/github-project-link.svg" alt="github octocat" /></a><a href="#/"
+              id="project-external-link"><img src="./icons/project-icons/external-link.svg"
+                alt="box with arrow in corner" /></a>
+          </div>
+          <h4>complete</h4>
+          <div class="project-body">
+            <p>
+              An application used to gather weather data via a user chosen zipcode, or a random US location.
+            <p>
+              Focus: Use vanilla JS / Axios with TDD to hit multiple API's for weather / location data while protecting
+              API keys with
+              express backend server and dotenv files.
+            </p>
+            </p>
+          </div>
+          <div class="project-icon-container">
+            <img src="./icons/devicon-icons/javascript/javascript-plain.svg" alt="javascript icon" />
+            <img src="./icons/devicon-icons/html5/html5-plain.svg" alt="html five icon" />
+            <img src="./icons/devicon-icons/css3/css3-plain.svg" alt="css three icon" />
+            <img src="./icons/devicon-icons/jest/jest-plain.svg" alt="react icon" />
+            <img src="./icons/devicon-icons/nodejs/nodejs-plain.svg" alt="node js icon" />
+            <img src="./icons/devicon-icons/express/express-original.svg" alt="express icon" />
+            <img src="./icons/webpack-icons/icon-square-small.svg" alt="express icon" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <hr>
+    <hr>
 
-      <footer>
-        <a href="mailto:hello@mattwwilson.com">EMAIL</a>
-        <a href="https://github.com/Mattwwilson34">GITHUB</a>
-        <a href="https://www.linkedin.com/in/mattwwilson">LINKED IN</a>
-        <a href="https://www.vecteezy.com/free-vector/software-engineer">SOFTWARE DEV CARTOON CREDIT</a>
-      </footer>
-    </main>
-    <script src="./js/script.js"></script>
-  </body>
+    <footer>
+      <a href="mailto:hello@mattwwilson.com">EMAIL</a>
+      <a href="https://github.com/Mattwwilson34">GITHUB</a>
+      <a href="https://www.linkedin.com/in/mattwwilson">LINKED IN</a>
+      <a href="https://www.vecteezy.com/free-vector/software-engineer">SOFTWARE DEV CARTOON CREDIT</a>
+    </footer>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
