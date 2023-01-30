@@ -23,7 +23,7 @@
 html {
   padding: 0 0.625rem 0 0.625rem;
   scroll-behavior: smooth;
-  scroll-padding-top: 18rem;
+  scroll-padding-top: 22rem;
   color: var(--font-color-primary);
   background-color: var(--bg-color-primary-drk);
 }
@@ -127,3 +127,55 @@ nav > div:nth-child(1) > div > a > img:hover {
   padding-bottom: 0.3125rem;
   border-bottom: 3px solid var(--color-accent-red);
 }
+
+
+/* Test */
+.project-container {
+    background-color: #1c1c1c;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3d3d3d;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 5px
+  }
+  .project-container > a {
+    border:none;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .project-container:hover {
+    border: 3px solid var(--color-accent-red)
+  }
+  .project-summary {
+    display: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .project-icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+  .project-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+  }
+
+  i {
+    font-size: 2rem;
+  }
+
+  em {
+    font-size: 1.25rem;
+  }
