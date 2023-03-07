@@ -3,7 +3,6 @@ const navlinks = document.querySelectorAll(".nav-link-container > a");
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const lines = document.querySelectorAll(".line");
 const githubLinks = document.querySelectorAll(".project-icons > a");
-console.log(githubLinks);
 
 hamburgerMenu.addEventListener("click", (event) => {
   // Apply classes on click
