@@ -34,11 +34,3 @@ githubLinks.forEach((githubLink) => {
     event.stopPropagation();
   });
 });
-
-const containers = document.querySelectorAll(".project-container");
-containers.forEach((container) => {
-  container.addEventListener("click", function () {
-    this.nextElementSibling.style.display =
-      this.nextElementSibling.style.display === "block" ? "none" : "block";
-  });
-});
